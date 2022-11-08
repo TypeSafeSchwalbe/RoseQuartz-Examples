@@ -9,5 +9,5 @@ This is a simple example for loading a 3D model and rendering it. We...
 - enable depth testing
 - render the model and rotate it
 
-The 3D model has been taken from [here](https://maxparata.itch.io/voxelshop).
+The 3D model was made by Max Parata and has been taken from [here](https://maxparata.itch.io/voxelshop).
 
