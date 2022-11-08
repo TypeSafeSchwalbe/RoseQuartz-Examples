@@ -5,4 +5,4 @@ This repository holds a collection of examples for the [RoseQuartz](https://devt
 
 Feel free to ask questions by creating an issue in the repository.
 
-Feel free to contribute and add other examples, but try to keep them as simple as possible (only doing what the example is about) and comment / document your code.
+Also feel free to contribute and add other examples, but try to keep them as simple as possible (only doing what the example is about) and remember to comment / document your code.
