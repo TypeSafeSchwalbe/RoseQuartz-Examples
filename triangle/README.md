@@ -1,3 +1,4 @@
+[Result](result.png)
 # Triangle Example
 This is a simple example for the famous OpenGL triangle. Like in OpenGL, we... 
 - create a VertexArray (represents a vertex array object (VBO), vertex buffer object (VBO) and element buffer object (EBO)) 
