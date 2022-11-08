@@ -1,6 +1,3 @@
-![Triangle Result](triangle/result.png)
-![Model Result](model/result.png)
-
 # RoseQuartz-Examples
 This repository holds a collection of examples for the [RoseQuartz](https://devtaube.itch.io/rosequartz) game engine: 
 - [Triange Example](triangle)
