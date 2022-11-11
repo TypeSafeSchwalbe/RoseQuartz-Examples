@@ -157,7 +157,7 @@ You can already start by creating a [`rosequartz.gfx.RenderTarget`](https://rose
 ### Calling the project's main method (api-base)
 The next step is to call the project's main method. For this, you will need to read the project   
 configuration file and instanciate the main class defined in said file.   
-After instantiating the class, cast it to a [`rosequartz.Project`](https://rosequartzdocs.netlify.app/rosequartz/project) call the [`main()`](https://rosequartzdocs.netlify.app/rosequartz/project#main())-method on said instance.  
+After instantiating the class, cast it to a [`rosequartz.Project`](https://rosequartzdocs.netlify.app/rosequartz/project) and call the [`main()`](https://rosequartzdocs.netlify.app/rosequartz/project#main())-method on said instance.  
 I recommend to keep the object somewhere to stop it from being garbage collected.   
 
 ### Finalizing setup of engine API graphics (api-fx)
@@ -201,10 +201,12 @@ import rosequartz.gfx.RenderTarget;
 
 Graphics._setInGraphicsPipeline(graphicsPipelineIdentifier, true); // we want to call graphics API calls
 RenderTarget userRenderTarget = RenderTarget.getCurrent(); // get the current render target
-/* target the default frame buffer here (replace this comment)
+/*
+   target the default frame buffer here (replace this comment)
    in OpenGL, this would mean:
        glBindFramebuffer(GL_FRAMEBUFFER, 0);
-*/     glViewport(0, 0, windowWidth, windowHeight);
+       glViewport(0, 0, windowWidth, windowHeight);
+*/
 <default-render-target>.getTexture().blit(0, 0, 1, 1, 0, 0, 1, 1); // blit onto the current target RenderTarget
 userRenderTarget.target(); // restore the old current render target
 Graphics._setInGraphicsPipeline(graphicsPipelineIdentifier, false); // we are done
